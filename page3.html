@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="initial-scale=1.0,width=device-width" name="viewport">
+
+	<title>My Hair</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Goblin+One&family=Lexend+Giga:wght@100..900&family=Lilita+One&family=Rosarivo:ital@0;1&family=Zen+Dots&display=swap" rel="stylesheet">
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	
+	<script src="js/scripts.js"></script>
+
+	<style>
+
+		p {
+			font-size: 1.5rem;
+			color: white;
+			font-family: 'afacad', sans-serif;
+		}
+		.photo {
+			width: 250px;
+			opacity: 0;
+			 display: block;
+  			margin: 0 auto;
+			transition: opacity 0.4s ease;
+		}
+
+		.btn:hover ~ .photo,
+		.container:has(.btn:hover) .photo {
+			opacity: 1;
+		}
+		.text {
+			text-align: center;
+			line-height: 2;
+			margin-bottom: 1.5rem;
+		}
+		body {
+			background: black;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100dvh;
+			padding: 2rem;
+			transition: opacity 1.6s ease;
+		}
+		.btn {
+			display: inline-block;
+			padding: 0.3rem 1rem;
+			background-color: #ffffff;
+			color: black;
+			font-size: 1.2rem;
+			text-decoration: none;
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+			transition: background-color 0.3s ease;
+			font-family: rosarivo, serif;
+			text-transform: capitalize;
+		}
+		.btn:hover {
+			background-color: rgb(99, 99, 99);
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="text">
+			<p>I followed the instructions, scrubbed the dye off my hands, and then remembered my hair,</p>
+			<a href="page4.html" class="btn">remembered</a>
+		</div>
+		<div class="image">
+			<img src="images/scared.jpg" alt="scared" class="photo">
+		</div>
+	</div>
+
+
+</body>
+</html>

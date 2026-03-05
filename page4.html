@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="initial-scale=1.0,width=device-width" name="viewport">
+
+	<title>My Hair</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Goblin+One&family=Lexend+Giga:wght@100..900&family=Lilita+One&family=Rosarivo:ital@0;1&family=Zen+Dots&display=swap" rel="stylesheet">
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	
+	<script src="js/scripts.js"></script>
+
+	<style>
+
+		p {
+			font-size: 1.5rem;
+			color: white;
+			font-family: 'afacad', sans-serif;
+		}
+		.container {
+			display: grid;
+			grid-template-columns: 1fr;
+			align-items: center;
+			gap: 20px;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			
+		}
+		.text {
+			text-align: left;
+			line-height: 2;
+		}
+		body {
+			background: black;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100dvh;
+			padding: 2rem;
+			transition: opacity 1.6s ease;
+		}
+		.btn {
+			display: inline-block;
+			padding: 0.3rem 1rem;
+			background-color: #ffffff;
+			color: black;
+			font-size: 1.2rem;
+			text-decoration: none;
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+			transition: background-color 0.3s ease;
+			font-family: zen dots, sans-serif;
+			text-transform: capitalize;
+		}
+		.btn:hover {
+			animation: moveRight 0.5s ease-in-out;
+		}
+		@keyframes moveRight {
+			0%   { transform: translateX(0); }
+			50%  { transform: translateX(300px); }
+			100% { transform: translateX(0); }
+		}
+		@media screen and (min-width: 700px) {
+			.container {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+			gap: 20px;
+			}
+			img{
+			order: 100;
+			}
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="text">
+			<p>I rinsed it out as fast as I could.</p>
+			<a href="page5.html" class="btn">fast</a>
+		</div>
+		<img src="images/bath.jpg" alt="bath guy">
+
+	</div>
+
+
+</body>
+</html>
